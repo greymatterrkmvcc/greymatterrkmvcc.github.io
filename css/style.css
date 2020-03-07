@@ -6,6 +6,11 @@
     font-size: 14px;
 }
 
+.s2, .s3, .s4{
+    background-color: black;
+    color: whitesmoke;
+}
+
 @keyframes scroll_animation{
     to{
         transform: translateY(-8px);
@@ -18,7 +23,7 @@
 .hero{
     width: 100%;
     height: 100%;
-    background: url("../images/hero.jpg");
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url("../images/videoframe_compressed.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +32,6 @@
 
 span{
     background: whitesmoke !important;
-    margin-right: 20px !important;
 }
 
 .navbar{

@@ -57,6 +57,10 @@
         <div class="section s3">
             <h1>No wraps, no extra markup</h1>
         </div>
+
+        <div class="section s4">
+            <h1>No wraps, no extra markup</h1>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
@@ -64,7 +68,10 @@
         new fullpage('#fullpage', {
             autoScrolling: true,
             navigation: true,
-            anchors: ["section1", "section2", "section3"]
+            navigationPosition: 'right',
+            anchors: ['section1', 'section2', 'section3', 'section4'],
+            navigationTooltips: ['Home', 'About', 'Events', 'Contact'],
+            showActiveTooltip: false,
         });
     </script>
 </body>
