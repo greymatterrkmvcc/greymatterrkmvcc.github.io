@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREY MATTER 1.0 | An event where everyone can participate.</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Oxanium:wght@800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section s1">
+            <div class="hero">
+                <div class="navbar">
+                    <div class="logo">Grey Matter</div>
+
+                    <ul class="navlinks">
+                        <li class="link"><a href="#section2">About</a></li>
+                        <li class="link"><a href="#section3">Event</a></li>
+                        <li class="link"><a href="#section4">Contact</a></li>
+
+                        <button type="submit" class="registor_now_btn">
+                            <p class="btn_name"><a href="#section3">Register now</a></p>
+                        </button>
+                    </ul>
+                </div>
+
+                <h1 class="heading">Event, where everyone<br>can participate</h1>
+                <div class="seconadary">
+                    <p class="ad">Come join us</p>
+                    <div class="divider_small"></div>
+                    <p class="time">Friday, March 20th, 2020</p>
+                </div>
+
+                <button type="submit" class="events_btn">
+                    <p class="btn_name2"><a href="#section3">See events</a></p>
+                    <div class="arrow"><i class="fas fa-caret-right"></i></div>
+                </button>
+
+                <div class="scroll_down">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="section s2">
+            hello
+        </div>
+
+        <div class="section s3">
+            <h1>No wraps, no extra markup</h1>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            autoScrolling: true,
+            navigation: true,
+            anchors: ["section1", "section2", "section3"]
+        });
+    </script>
+</body>
+
+</html>
