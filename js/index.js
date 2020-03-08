@@ -1,3 +1,7 @@
+window.addEventListener('load', () => {
+    document.querySelector('.loader').classList.add('loading-finish');
+});
+
 const endDate = new Date("Mar 20, 2020 00:00:00").getTime();
 
 const timer = setInterval(() => {

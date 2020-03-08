@@ -15,6 +15,84 @@
     color: whitesmoke;
 }
 
+.loading-finish{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.loader {
+    position: absolute;
+    background: linear-gradient(135deg, #803055, #1b0230);
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    z-index: 999;
+    transition: all 0.5s ease;
+  }
+  .jumper {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+  }
+  .jumper > div {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: jumper 1s 0s linear infinite;
+    animation: jumper 1s 0s linear infinite;
+  }
+  .jumper > div:nth-child(2) {
+    -webkit-animation-delay: 0.33333s;
+    animation-delay: 0.33333s;  
+  }
+  .jumper > div:nth-child(3) {
+    -webkit-animation-delay: 0.66666s;
+    animation-delay: 0.66666s;
+  }
+  @-webkit-keyframes jumper {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    5% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  @keyframes jumper {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    5% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
 /*
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SECTION 1
@@ -295,7 +373,7 @@ SECTION 2
     align-self: flex-start;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to top, #6441a5, #1b0230);
+    background: linear-gradient(to top, #803055, #1b0230);;
     color: whitesmoke;
     position: relative;
     box-shadow: -12px 0 10px 5px rgba(0,0,0,0.25);
@@ -359,7 +437,7 @@ SECTION 2
 }
 
 .events_btn2 i{
-    color: #6441a5;
+    color: #803055;
     font-size: 2.5em;
     transition: transform 0.3s ease;
 }
