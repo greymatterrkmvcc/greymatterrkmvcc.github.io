@@ -6,14 +6,24 @@
     font-size: 14px;
 }
 
-.s2, .s3, .s4{
+::selection{
+    background-color: darkorange;
+}
+
+.s3, .s4{
     background-color: black;
     color: whitesmoke;
 }
 
+/*
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SECTION 1
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
 @keyframes scroll_animation{
     to{
-        transform: translateY(-8px);
+        transform: translateY(8px);
     }
     from{
         transform: translateY(0);
@@ -69,13 +79,13 @@ span{
     color: whitesmoke;
     text-decoration: none;
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 600;
 }
 .link::before{
     content: '';
     display: block;
     margin-bottom: 4px;
-    height: 2px;
+    height: 2.4px;
     background: whitesmoke;
     transform: scale(0, 1);
     transition: transform .3s ease;
@@ -191,4 +201,162 @@ span{
     font-size: 3em;
     line-height: 20px;
     animation: scroll_animation .5s infinite alternate;
+}
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SECTION 2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.timer_background{
+    padding: 8%;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/timer_back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.timer{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 12%;
+    grid-template-areas: "days hours" "mins secs";
+}
+
+.timer-days,
+.timer-hours,
+.timer-mins,
+.timer-secs{
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 20px;
+    color: whitesmoke;
+    font-size: 6em;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-days{
+    grid-area: "days";
+}
+
+.timer-hours{
+    grid-area: "hours";
+}
+
+.timer-mins{
+    grid-area: "mins";
+}
+
+.timer-secs{
+    grid-area: "secs";
+}
+
+.label_finished{
+    background-color: rgba(0,0,0,0.8);
+    padding: 8%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 3.5em;
+    line-height: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.about_container{
+    padding: 8%;
+    width: 45%;
+    height: 100%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, #6441a5, #1b0230);
+    color: whitesmoke;
+    position: relative;
+    box-shadow: -12px 0 10px 5px rgba(0,0,0,0.25);
+}
+
+.rkmvcc_text{
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 6px;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.about_heading{
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 6px;
+    z-index: 1;
+}
+
+.organized_text{
+    font-weight: 600;
+    margin-bottom: 12px;
+    opacity: 0.7;
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+.email_text{
+    font-weight: 500;
+    margin-bottom: 60px;
+    opacity: 0.7;
+    z-index: 1;
+}
+.email_text i{
+    font-size: 1.1em;
+}
+
+.about_text{
+    font-weight: 600;
+    font-size: 1.15em;
+    opacity: 0.8;
+    line-height: 1.6em;
+    z-index: 1;
+}
+
+.events_btn2{
+    height: 80px;
+    width: 80px;
+    background: linear-gradient(to left, rgb(185, 185, 185), white);
+    position: absolute;
+    border-radius: 50%;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.events_btn2 i{
+    color: #6441a5;
+    font-size: 2.5em;
+    transition: transform 0.3s ease;
+}
+.events_btn2:hover i{
+    transform: translateY(4px);
 }
