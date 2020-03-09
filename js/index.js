@@ -1,4 +1,5 @@
 window.addEventListener('load', () => {
+    // adds the fullpage effect
     new fullpage('#fullpage', {
         autoScrolling: true,
         navigation: true,
@@ -8,11 +9,14 @@ window.addEventListener('load', () => {
         showActiveTooltip: false,
     });
 
+    // removes the loading animation
     document.querySelector('.loader').classList.add('loading-finish');
 });
 
+// code for the countdown timer
 const endDate = new Date("Mar 20, 2020 00:00:00").getTime();
 
+// will execute the function after every 1000ms i.e 1s
 const timer = setInterval(() => {
 
     let now = new Date().getTime();
@@ -39,7 +43,7 @@ const timer = setInterval(() => {
 
     } else {
 
-        document.querySelector(".timer").innerHTML = "<p class='label_finished'>The day has finally arrived. ENJOY!</p>";
+        document.querySelector(".timer").innerHTML = "<p class='label_finished'>The day has finally arrived. ENJOY!<br>[Registration has been closed.]</p>";
 
     }
 

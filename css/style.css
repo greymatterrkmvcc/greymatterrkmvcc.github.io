@@ -6,11 +6,15 @@
     font-size: 14px;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 ::selection{
     background-color: darkorange;
 }
 
-.s3, .s4{
+.s4{
     background-color: black;
     color: whitesmoke;
 }
@@ -461,7 +465,7 @@ SECTION 3
 }
 
 .event_cards{
-    height: 80%;
+    height: 85%;
     width: 100%;
     background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(255,255,255,0.4), rgba(0,0,0,0.3)), url("../images/event_back.jpg");
     background-position: center;
@@ -475,6 +479,7 @@ SECTION 3
 
 .event_card{
     border-radius: 20px;
+    color: whitesmoke;
     padding: 30px 0;
     display: flex;
     flex-direction: column;
@@ -489,35 +494,35 @@ SECTION 3
 
 .card1{
     grid-area: card1;
-    background: linear-gradient(to right, #1b0230e7, rgba(0,0,0,0.1)), url("../images/brainopedia.jpg");
+    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url("../images/brainopedia.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .card2{
     grid-area: card2;
-    background: linear-gradient(to right, #1b0230e7, rgba(0,0,0,0.4)), url("../images/tugfofwar.jpg");
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0)), url("../images/tugfofwar.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .card3{
     grid-area: card3;
-    background: linear-gradient(to right, #1b0230e7, rgba(0,0,0,0.4)), url("../images/encrypto.jpg");
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url("../images/encrypto.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .card4{
     grid-area: card4;
-    background: linear-gradient(to right, #1b0230e7, rgba(0,0,0,0.4)), url("../images/codeaffair.jpg");
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0)), url("../images/codeaffair.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .card5{
     grid-area: card5;
-    background: linear-gradient(to right, #1b0230e7, rgba(0,0,0,0.4)), url("../images/upfront.jpg");
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0)), url("../images/upfront.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -537,7 +542,7 @@ SECTION 3
 }
 
 .lower_part{
-    height: 20%;
+    height: 15%;
     width: 100%;
     background: linear-gradient(to bottom, #803055, #1b0230);
     display: flex;
@@ -572,4 +577,148 @@ SECTION 3
 
 .cta_link i{
     margin-left: 10px;
+}
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SECTION 4
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.container2{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.contact_container{
+    padding: 8%;
+    width: 45%;
+    height: 100%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, #803055, #1b0230);
+    color: whitesmoke;
+    position: relative;
+    box-shadow: 6px 0 10px 5px rgba(0,0,0,0.2);
+}
+
+.head_text{
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 18px;
+    opacity: 0.7;
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+.committee_names{
+    list-style: circle;
+    margin-left: 32px;
+    display: grid;
+    grid-template-areas: "name name" "name name" "name name";
+}
+
+.names{
+    font-weight: 500;
+    margin-bottom: 10px;
+    width: fit-content;
+    opacity: 0.8;
+}
+
+.quote_background{
+    padding: 8%;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/quote_back.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.quote{
+    background: rgba(0,0,0,0.8);
+    padding: 0 10%;
+    border-radius: 20px;
+    position: relative;
+    top: 6%;
+    box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.2);
+}
+
+.bill_img{
+    background: url("../images/bill.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: -25%;
+    right: 12%;
+    box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.2);
+}
+
+.quote_name{
+    padding-top: 80px;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.bill_des{
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.quote_text{
+    margin-top: 30px;
+    font-weight: 500;
+    opacity: 0.8;
+    padding-bottom: 40px;
+    font-size: 1.3em;
+    line-height: 30px;
+}
+
+.arrow_up{
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 6.5%;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.1);
+}
+.arrow_up:hover i{
+    transform: translateY(-4px);
+}
+
+.arrow_up i{
+    font-size: 2em;
+    transition: all 0.3s ease;
+}
+
+.rights{
+    background: rgba(0,0,0,0.8);
+    border-radius: 20px;
+    padding: 12px 24px;
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #f5f5f5e1;
+    box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.1);
+}
+
+.quote_background a{
+    color: whitesmoke;
 }
