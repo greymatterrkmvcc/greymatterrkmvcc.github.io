@@ -373,10 +373,10 @@ SECTION 2
     align-self: flex-start;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to top, #803055, #1b0230);;
+    background: linear-gradient(to top, #803055, #1b0230);
     color: whitesmoke;
     position: relative;
-    box-shadow: -12px 0 10px 5px rgba(0,0,0,0.25);
+    box-shadow: -6px 0 10px 5px rgba(0,0,0,0.2);
 }
 
 .rkmvcc_text{
@@ -443,4 +443,133 @@ SECTION 2
 }
 .events_btn2:hover i{
     transform: translateY(4px);
+}
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SECTION 3
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.event_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.event_cards{
+    height: 80%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(255,255,255,0.4), rgba(0,0,0,0.3)), url("../images/event_back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: "card1 card2 card3" "card4 card4 card5";
+    grid-gap: 50px;
+    padding: 4% 6%;
+}
+
+.event_card{
+    border-radius: 20px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.1);
+}
+
+.event_card button{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.card1{
+    grid-area: card1;
+    background: linear-gradient(to right, #1b0230e7, rgba(0,0,0,0.1)), url("../images/brainopedia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card2{
+    grid-area: card2;
+    background: linear-gradient(to right, #1b0230e7, rgba(0,0,0,0.4)), url("../images/tugfofwar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card3{
+    grid-area: card3;
+    background: linear-gradient(to right, #1b0230e7, rgba(0,0,0,0.4)), url("../images/encrypto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card4{
+    grid-area: card4;
+    background: linear-gradient(to right, #1b0230e7, rgba(0,0,0,0.4)), url("../images/codeaffair.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card5{
+    grid-area: card5;
+    background: linear-gradient(to right, #1b0230e7, rgba(0,0,0,0.4)), url("../images/upfront.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.event_name{
+    margin: 0 40px;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.event_subheading{
+    margin: 0 40px;
+    font-weight: 600;
+    margin-top: 6px;
+    opacity: 0.7;
+}
+
+.lower_part{
+    height: 20%;
+    width: 100%;
+    background: linear-gradient(to bottom, #803055, #1b0230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.2);
+}
+
+.lower_part button{
+    border: 2px solid whitesmoke;
+    background: whitesmoke;
+    color: black;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.lower_part button:focus{
+    outline: none;
+}
+
+.lower_part button:hover{
+    background: transparent;
+    color: whitesmoke;
+    transform: translateY(2px);
+}
+
+.cta_link:nth-child(2){
+    margin: 0 80px;
+}
+
+.cta_link i{
+    margin-left: 10px;
 }

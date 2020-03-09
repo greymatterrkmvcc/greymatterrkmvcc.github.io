@@ -1,4 +1,13 @@
 window.addEventListener('load', () => {
+    new fullpage('#fullpage', {
+        autoScrolling: true,
+        navigation: true,
+        navigationPosition: 'right',
+        anchors: ['section1', 'section2', 'section3', 'section4'],
+        navigationTooltips: ['Home', 'About', 'Events', 'Contact'],
+        showActiveTooltip: false,
+    });
+
     document.querySelector('.loader').classList.add('loading-finish');
 });
 
