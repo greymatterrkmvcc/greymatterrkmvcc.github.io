@@ -259,17 +259,25 @@ span{
 .events_btn:hover .arrow i{
     color: whitesmoke;
 }
+.events_btn_alt{
+    margin-top: 2em;
+}
 
 .btn_name2 a{
     color: black;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .arrow i{
     margin-top: 2px;
     margin-left: 12px;
     font-size: 1.6em;
+}
+
+.btn_name2 i{
+    margin-left: 12px;
+    transform: translateY(-1px);
 }
 
 .scroll_down{
@@ -821,6 +829,7 @@ MEDIA QUERY
 
     .about_text{
         font-weight: 500;
+        font-size: 0.9em;
     }
 
     .lower_part{
@@ -832,7 +841,7 @@ MEDIA QUERY
     }
 
     .event_cards{
-        height: 90%;
+        height: 100%;
         grid-template-areas: "card1" "card2" "card3" "card4" "card5";
         grid-gap: 20px;
         background: linear-gradient(to top, rgba(0,0,0,0.4), rgba(255,255,255,1)), url("../images/event_back.jpg");
@@ -844,8 +853,10 @@ MEDIA QUERY
 
     .event_card{
         width: 100%;
+        height: min-content;
         flex-direction: row;
         justify-content: space-between;
+        padding: 20px 0;
     }
 
     .event_card button{
@@ -855,7 +866,7 @@ MEDIA QUERY
     }
 
     .event_name{
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .card1{
@@ -889,19 +900,7 @@ MEDIA QUERY
         background-size: cover;
     }
 
-    .lower_part button{
-        padding: 8px 16px;
-    }
-    
-    .cta_link:nth-child(1){
-        margin-right: 30px;
-    }
-
-    .cta_link:nth-child(2){
-        margin: 0;
-    }
-
-    .cta_link:nth-child(3){
+    .lower_part{
         display: none;
     }
 
@@ -920,42 +919,56 @@ MEDIA QUERY
     }
 
     .quote{
-        padding: 0 12%;
+        padding: 0 10%;
     }
 
     .head_text{
         margin-top: 14px;
         margin-bottom: 12px;
-        font-size: 1em;
+        font-size: 0.9em;
+    }
+
+    .names{
+        font-size: 0.85em;
     }
 
     .bill_img{
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         top: -10%;
     }
 
     .quote_name{
-        padding-top: 65px;
-        font-size: 1.3em;
+        padding-top: 30px;
+        font-size: 1.1em;
+    }
+
+    .bill_des{
+        font-size: 0.8em;
     }
 
     .quote_text{
-        font-size: 1.05em;
+        font-size: 0.9em;
         line-height: 24px;
-        padding-bottom: 30px;
+        padding-bottom: 25px;
         margin-top: 20px;
     }
 
     .arrow_up{
-        bottom: -470px;
+        bottom: -420px;
         right: 7%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .arrow_up i{
+        font-size: 1.6em;
     }
 
     .rights{
-        bottom: -470px;
+        bottom: -420px;
         left: 7%;
         width: fit-content;
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 }
