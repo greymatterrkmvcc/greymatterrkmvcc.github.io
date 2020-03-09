@@ -260,8 +260,9 @@ span{
     color: whitesmoke;
 }
 .events_btn_alt{
-    margin-top: 2em;
+    display: none;
 }
+
 
 .btn_name2 a{
     color: black;
@@ -768,6 +769,7 @@ MEDIA QUERY
 
     .heading{
         font-size: 2.5em;
+        line-height: 1.4em;
     }
 
     .seconadary{
@@ -781,6 +783,15 @@ MEDIA QUERY
 
     .time{
         margin-top: 10px;
+    }
+
+    .events_btn_alt{
+        display: block;
+        margin-top: 1.5em;
+        background: transparent;
+    }
+    .events_btn_alt a{
+        color: whitesmoke;
     }
 
     .container{
