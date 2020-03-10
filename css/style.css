@@ -853,8 +853,8 @@ MEDIA QUERY
 
     .event_cards{
         height: 100%;
-        grid-template-areas: "card1" "card2" "card3" "card4" "card5";
-        grid-gap: 20px;
+        grid-template-areas: "card1 card2" "card3 card4" "card5 card5";
+        grid-gap: 30px;
         background: linear-gradient(to top, rgba(0,0,0,0.4), rgba(255,255,255,1)), url("../images/event_back.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -863,21 +863,27 @@ MEDIA QUERY
     }
 
     .event_card{
-        width: 100%;
-        height: min-content;
-        flex-direction: row;
-        justify-content: space-between;
+        /* height: 33%; */
         padding: 20px 0;
+        position: relative;
+        align-items: flex-start;
     }
 
     .event_card button{
-        margin: 0;
-        align-self: center;
-        margin-right: 40px;
+        margin: 0 0 20px 20px;
+        bottom: 0;
+        position: absolute;
     }
 
     .event_name{
         font-size: 1.1em;
+        margin: 0 0 0 20px;
+    }
+
+    .event_subheading{
+        margin: 8px 0 0 20px;
+        font-weight: 500;
+        font-size: 0.9em;
     }
 
     .card1{
@@ -903,12 +909,14 @@ MEDIA QUERY
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        grid-area: card5;
     }
     .card5{
         background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/upfront.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        grid-area: card4;
     }
 
     .lower_part{
@@ -966,7 +974,7 @@ MEDIA QUERY
     }
 
     .arrow_up{
-        bottom: -420px;
+        bottom: -410px;
         right: 7%;
         width: 50px;
         height: 50px;
@@ -977,7 +985,7 @@ MEDIA QUERY
     }
 
     .rights{
-        bottom: -420px;
+        bottom: -410px;
         left: 7%;
         width: fit-content;
         font-size: 0.8em;
