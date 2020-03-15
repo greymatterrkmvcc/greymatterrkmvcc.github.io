@@ -13,8 +13,16 @@ window.addEventListener('load', () => {
     document.querySelector('.loader').classList.add('loading-finish');
 });
 
+
+// temporary content
+document.querySelector('.btn_temp').addEventListener('click', () => {
+    document.querySelector('.postpone_container').classList.add('understood');
+});
+// temporary content
+
+
 // code for the countdown timer
-const endDate = new Date("Mar 20, 2020 00:00:00").getTime();
+const endDate = new Date("Mar 31, 2020 00:00:00").getTime();
 
 // will execute the function after every 1000ms i.e 1s
 const timer = setInterval(() => {
