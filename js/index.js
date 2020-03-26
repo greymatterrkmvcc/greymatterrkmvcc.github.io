@@ -22,7 +22,7 @@ document.querySelector('.btn_temp').addEventListener('click', () => {
 
 
 // code for the countdown timer
-const endDate = new Date("Mar 31, 2020 00:00:00").getTime();
+const endDate = new Date("Apr 15, 2020 00:00:00").getTime();
 
 // will execute the function after every 1000ms i.e 1s
 const timer = setInterval(() => {
