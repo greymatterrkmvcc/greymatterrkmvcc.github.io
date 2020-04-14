@@ -56,7 +56,7 @@ const timer = setInterval(() => {
         // document.querySelector(".timer").innerHTML = "<p class='label_finished'>The day has finally arrived. ENJOY!<br>[Registration has been closed.]</p>";
 
         // TEMPORARY CONTENT
-        document.querySelector(".timer").innerHTML = "<p class='label_finished'>The event date is postponed untill further notice due to COVID-19 situation.</p>";
+        document.querySelector(".timer").innerHTML = "<p class='label_finished'>The event date is postponed until further notice due to COVID-19 situation.</p>";
     }
 
 }, 1000);
