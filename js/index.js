@@ -22,7 +22,8 @@ document.querySelector('.btn_temp').addEventListener('click', () => {
 
 
 // code for the countdown timer
-const endDate = new Date("Apr 15, 2020 00:00:00").getTime();
+const endDate = new Date(null).getTime(); 
+//TODO: ADD THE NEW DATE ONCE FIXED HERE IN THE FORMAT --> Apr 15, 2020 00:00:00
 
 // will execute the function after every 1000ms i.e 1s
 const timer = setInterval(() => {
@@ -51,8 +52,11 @@ const timer = setInterval(() => {
 
     } else {
 
-        document.querySelector(".timer").innerHTML = "<p class='label_finished'>The day has finally arrived. ENJOY!<br>[Registration has been closed.]</p>";
+        // ACTUAL CONTENT
+        // document.querySelector(".timer").innerHTML = "<p class='label_finished'>The day has finally arrived. ENJOY!<br>[Registration has been closed.]</p>";
 
+        // TEMPORARY CONTENT
+        document.querySelector(".timer").innerHTML = "<p class='label_finished'>The event date is postponed untill further notice due to COVID-19 situation.</p>";
     }
 
 }, 1000);
